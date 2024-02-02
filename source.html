@@ -52,7 +52,7 @@
 <Variable name="endSide" description="End side in blog language" type="automatic" default="right" hideEditor="true" />
 
 <Group description="Body">
-  <Variable name="body.background" description="Background" type="background" color="$(body.background.color)" default="$(color) none repeat scroll top left"  value="#01050c url(https://themes.googleusercontent.com/image?id=wltVPUckfSK9W7r7g9igwymWBEo331nLn9RtDt0jiRzLWLfYn17ncXNLjzi6gMZd0cE2mcKHh5eh) no-repeat scroll top center /* Credit: Armen-Jean Andreasian (http://www.offset.com/photos/223311) */;"/>
+  <Variable name="body.background" description="Background" type="background" color="$(body.background.color)" default="$(color) none repeat scroll top left"  value="#01050c url(https://static.vecteezy.com/system/resources/previews/000/359/482/original/science-banner-chemical-laboratory-skull-books-apple-glasses-table-vector-flat-illustration.jpg) no-repeat scroll top center /* Credit: Armen-Jean Andreasian (https://github.com/Armen-Jean-Andreasian) */;"/>
   <Variable name="body.background.color" description="Background color" type="color" default="#fff"  value="#01050c"/>
   <Variable name="body.title.font.small" description="Title font (small)" type="font" default="$(garamond20)"  value="normal 300 20px Lato, sans-serif"/>
   <Variable name="body.title.font.large" description="Title font (large)" type="font" default="$(garamond24)"  value="normal 300 24px Lato, sans-serif"/>
@@ -1654,50 +1654,6 @@ display:inline
 .sticky #page_list_top{
 display:none
 }
-
-body.homepage-view .hero-image {
-  background: $(body.background);
-  background-attachment: scroll;
-  background-color: $(body.background.color);
-  background-size: cover;
-  height: 62.5vw;
-  max-height: 75vh;
-  min-height: 200px;
-  width: 100%;
-}
-
-body.homepage-view .hero-image.has-image {
-  position: relative;
-  height: 200px; /* Adjust the height based on your design */
-}
-
-body.homepage-view .hero-image .post-content {
-  position: absolute;
-  top: 50%; /* Adjust the positioning based on your design */
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: #fff; /* Adjust the text color based on your design */
-}
-
-body.homepage-view .hero-image .post-content h2 {
-  margin-bottom: 10px;
-  font-size: 2em; /* Adjust the font size based on your design */
-}
-
-body.homepage-view .hero-image.has-image .hero-thumb {
-  display: none; /* Hide the thumbnail when hero image is present */
-}
-
-body.homepage-view .hero-image.no-featured-image {
-  height: 300px; /* Adjust the height based on your design */
-}
-
-body.homepage-view .hero-image.no-featured-image .hero-thumb {
-  display: block; /* Show the thumbnail when no hero image is present */
-}
-
-
-
 
 .post-filter-message{
 background-color:$(body.filter.background.color);
@@ -3627,7 +3583,7 @@ z-index:32
     &quot;height&quot;: 630,
     &quot;width&quot;: 1200
     <b:else/>
-    &quot;url&quot;: &quot;https://blogger.googleusercontent.com/img/b/U2hvZWJveA/AVvXsEgfMvYAhAbdHksiBA24JKmb2Tav6K0GviwztID3Cq4VpV96HaJfy0viIu8z1SSw_G9n5FQHZWSRao61M3e58ImahqBtr7LiOUS6m_w59IvDYwjmMcbq3fKW4JSbacqkbxTo8B90dWp0Cese92xfLMPe_tg11g/w1200/&quot;,
+    &quot;url&quot;: &quot;;,
     &quot;height&quot;: 348,
     &quot;width&quot;: 1200
     </b:if>
@@ -3639,7 +3595,7 @@ z-index:32
     &quot;name&quot;: &quot;Blogger&quot;,
     &quot;logo&quot;: {
       &quot;@type&quot;: &quot;ImageObject&quot;,
-      &quot;url&quot;: &quot;https://blogger.googleusercontent.com/img/b/U2hvZWJveA/AVvXsEgfMvYAhAbdHksiBA24JKmb2Tav6K0GviwztID3Cq4VpV96HaJfy0viIu8z1SSw_G9n5FQHZWSRao61M3e58ImahqBtr7LiOUS6m_w59IvDYwjmMcbq3fKW4JSbacqkbxTo8B90dWp0Cese92xfLMPe_tg11g/h60/&quot;,
+      &quot;url&quot;: &quot;,
       &quot;width&quot;: 206,
       &quot;height&quot;: 60
     }
@@ -4044,7 +4000,7 @@ z-index:32
           </main>
         </div>
         <b:section class='footer' id='footer' name='Footer' showaddelement='false' tag='footer'>
-          <b:widget id='Attribution1' locked='true' title='' type='Attribution' visible='true'>
+          <b:widget id='Attribution1' locked='true' title='' type='Attribution' version='2' visible='true'>
             <b:widget-settings>
               <b:widget-setting name='copyright'/>
             </b:widget-settings>
@@ -4086,11 +4042,28 @@ z-index:32
         <b:include data='{ iconClass: &quot;touch-icon sidebar-back rtl-reversible-icon&quot; }' name='backArrowIcon'/>
       </div>
       <b:section id='sidebar' name='Sidebar' preferred='yes'>
+        <b:widget id='HTML2' locked='false' title='‎' type='HTML' visible='true'>
+          <b:widget-settings>
+            <b:widget-setting name='content'><![CDATA[<img
+        src="https://shorturl.at/pFGT7"
+        alt="photo"
+        width="200"
+        height="200"
+></img
+>]]></b:widget-setting>
+          </b:widget-settings>
+          <b:includable id='main'>
+  <b:include name='widget-title'/>
+  <div class='widget-content'>
+    <data:content/>
+  </div>
+</b:includable>
+        </b:widget>
         <b:widget id='Header2' locked='false' title='Dev Hustle (Header)' type='Header' visible='true'>
           <b:widget-settings>
             <b:widget-setting name='displayUrl'/>
             <b:widget-setting name='displayHeight'>0</b:widget-setting>
-            <b:widget-setting name='sectionWidth'>-1</b:widget-setting>
+            <b:widget-setting name='sectionWidth'>831</b:widget-setting>
             <b:widget-setting name='useImage'>false</b:widget-setting>
             <b:widget-setting name='shrinkToFit'>false</b:widget-setting>
             <b:widget-setting name='imagePlacement'>BEHIND</b:widget-setting>
@@ -4133,7 +4106,7 @@ z-index:32
           </div>
         </b:includable>
         </b:widget>
-        <b:widget id='HTML1' locked='false' title='About Author' type='HTML' visible='true'>
+        <b:widget id='HTML1' locked='false' title='About Author' type='HTML' visible='false'>
           <b:widget-settings>
             <b:widget-setting name='content'><![CDATA[<!doctype html>
 
@@ -4144,7 +4117,7 @@ z-index:32
 </style>
 
 <img
-        src="https://avatars.githubusercontent.com/u/22787667?v=4"
+        src="https://shorturl.at/pFGT7"
         alt="photo"
         width="200"
         height="200"
@@ -4380,7 +4353,7 @@ z-index:32
           <b:include data='{                               buttonClass: &quot;flat-button&quot;,                               items: data:this.labels,                               itemSet: &quot;labels&quot;,                               itemsMarkup: &quot;super.list&quot;                             }' name='extendableItems'/>
         </b:includable>
         </b:widget>
-        <b:widget id='Translate1' locked='false' title='Translate' type='Translate' visible='true'>
+        <b:widget id='Translate1' locked='false' title='Translate' type='Translate' visible='false'>
           <b:widget-settings>
             <b:widget-setting name='displayMode'>VERTICAL</b:widget-setting>
           </b:widget-settings>
