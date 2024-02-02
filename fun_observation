@@ -1,0 +1,24 @@
+In the code 4008-4014 lines are responsible for "Powered by Blogger" banner in the bottom.
+  
+  <div class='widget-content'>
+    <div class='blogger'>
+      <a expr:href='data:bloggerUrl' rel='nofollow'>
+        <b:include name='flatBloggerIcon'/>
+        <b:message name='messages.poweredByBlogger'/>
+      </a>
+    </div>
+
+Also the line 55 is responsible for mentioning the name of the theme's/background's author 
+
+  <Variable name="body.background" description="Background" type="background" color="$(body.background.color)" default="$(color) none repeat scroll top left"  value="#01050c url(https://static.vecteezy.com/system/resources/previews/000/359/482/original/science-banner-chemical-laboratory-skull-books-apple-glasses-table-vector-flat-illustration.jpg) no-repeat scroll top center /* Credit: Armen-Jean Andreasian (https://github.com/Armen-Jean-Andreasian) */;"/>
+
+
+  -----------
+  Fun observation: 
+    The lines responsible "Powered by Blogger" are written using metaprogramming, so no matter you change it or not, they will be rewritten after each request-response.
+    The line of mentioning the name of the author is fully editable/removable.
+
+  Conclusions: :)
+  
+  P.S. Fyi, Blogger is a part of Google.
+  
