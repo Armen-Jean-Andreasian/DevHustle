@@ -1,0 +1,3 @@
+The site (https://dev-hustle.blogspot.com/) has AdSense enabled. I leave all responsibility to the Services that will collect this data.
+The HTML source of the site will be published on Github.
+For everything else, turn to Google. The site administrator has nothing to do with data collection, has no scripts, and the source code is publicly available.
